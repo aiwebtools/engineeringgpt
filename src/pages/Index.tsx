@@ -9,6 +9,7 @@ import FAQ from '../components/FAQ';
 import Disclaimer from '../components/Disclaimer';
 import HowItWorks from '../components/HowItWorks';
 import Testimonials from '../components/Testimonials';
+import PromptEngineerSection from '../components/PromptEngineerSection';
 import ParticleBackground from '../components/particles/ParticleBackground';
 import { motion } from 'framer-motion';
 
@@ -140,6 +141,7 @@ const Index: React.FC = () => {
         
         <HowItWorks />
         <VideoSection />
+        <PromptEngineerSection />
         <Testimonials />
         <FAQ />
         <Disclaimer />

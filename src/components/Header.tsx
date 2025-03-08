@@ -21,6 +21,7 @@ const Header: React.FC = () => {
     { name: 'Mechanical Engineering GPT', url: 'https://chatgpt.com/g/g-67cbb096c0f08191be55a6436a4e5313-mechanical-engineering-gpt' },
     { name: 'Civil Engineer GPT', url: 'https://chatgpt.com/g/g-67cbabcbf6988191840b58b26cdecbdd-civil-engineer-gpt' },
     { name: 'AI Software Engineer GPT', url: 'https://chatgpt.com/g/g-67cba72430b08191a43779ca0cca0e84-ai-software-engineer-gpt' },
+    { name: 'PROMPT ENGINEER GPT', url: 'https://perfectpromptengine.lovable.app/' },
     { name: 'FAQ', url: '#faq' },
     { name: 'Disclaimer', url: '#disclaimer' },
     { name: 'More AI Tools', url: 'https://www.aiwebtools.ai' },
