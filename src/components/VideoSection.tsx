@@ -1,51 +1,8 @@
 
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 
 const VideoSection: React.FC = () => {
-  const videoContainerRef = useRef<HTMLDivElement>(null);
-  
-  useEffect(() => {
-    // Create an Intersection Observer to load the video when it's visible
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            if (videoContainerRef.current) {
-              // Replace with your YouTube video ID
-              const videoId = "VIDEO_ID_HERE"; // Replace with actual video ID
-              
-              // Create the iframe
-              const iframe = document.createElement('iframe');
-              iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=0&controls=1&rel=0&showinfo=0&modestbranding=1&hd=1`;
-              iframe.width = "100%";
-              iframe.height = "100%";
-              iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
-              iframe.frameBorder = "0";
-              iframe.allowFullscreen = true;
-              
-              // Add the iframe to the container
-              videoContainerRef.current.innerHTML = "";
-              videoContainerRef.current.appendChild(iframe);
-              
-              // Disconnect the observer after loading
-              observer.disconnect();
-            }
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-    
-    if (videoContainerRef.current) {
-      observer.observe(videoContainerRef.current);
-    }
-    
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
-  
   return (
     <section className="py-20 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-cyber-black to-[#080808] z-0"></div>
@@ -75,14 +32,12 @@ const VideoSection: React.FC = () => {
         >
           <div className="absolute inset-0 cyber-border z-0"></div>
           
-          <div 
-            ref={videoContainerRef} 
-            className="relative w-full h-full bg-black flex items-center justify-center"
-          >
-            <div className="flex flex-col items-center justify-center">
-              <div className="loading-spinner mb-4"></div>
-              <p className="text-gray-400">Loading video...</p>
-            </div>
+          <div className="relative w-full h-full bg-black flex items-center justify-center">
+            <img 
+              src="https://img1.wsimg.com/isteam/ip/9fd6d942-5b46-4025-92e2-0f1ec2a7adf2/a-digital-advertisement-for-engineering-_hEePg.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1200,cg:true" 
+              alt="Engineering GPTs Advertisement" 
+              className="w-full h-full object-cover"
+            />
           </div>
         </motion.div>
       </div>
