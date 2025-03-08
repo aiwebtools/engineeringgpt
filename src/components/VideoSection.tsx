@@ -17,9 +17,7 @@ const VideoSection: React.FC = () => {
         once: true
       }} className="max-w-4xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 glow-text">UNLOCK ENGINEERING </h2>
-          <p className="text-gray-300 mb-10 max-w-2xl mx-auto">
-            Watch how these powerful engineering AI tools can solve complex problems and assist with technical documentation.
-          </p>
+          <p className="text-gray-300 mb-10 max-w-2xl mx-auto">Our powerful engineering AI tools can solve complex problems and assist with various technical documentation.</p>
         </motion.div>
         
         <motion.div initial={{
