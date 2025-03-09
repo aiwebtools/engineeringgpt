@@ -8,6 +8,7 @@ const Footer: React.FC = () => {
     { name: 'Mechanical Engineering GPT', url: 'https://chatgpt.com/g/g-67cbb096c0f08191be55a6436a4e5313-mechanical-engineering-gpt' },
     { name: 'Civil Engineer GPT', url: 'https://chatgpt.com/g/g-67cbabcbf6988191840b58b26cdecbdd-civil-engineer-gpt' },
     { name: 'AI Software Engineer GPT', url: 'https://chatgpt.com/g/g-67cba72430b08191a43779ca0cca0e84-ai-software-engineer-gpt' },
+    { name: 'Rocket Engineering GPT', url: 'https://chatgpt.com/g/g-67cdf8a38eb4819191ef22099e43f53a-rocket-engineering-gpt' },
     { name: 'PROMPT ENGINEER GPT', url: 'https://perfectpromptengine.lovable.app/' },
     { name: 'FAQ', url: '#faq' },
     { name: 'Disclaimer', url: '#disclaimer' },

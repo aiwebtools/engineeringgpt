@@ -10,6 +10,7 @@ import Disclaimer from '../components/Disclaimer';
 import HowItWorks from '../components/HowItWorks';
 import Testimonials from '../components/Testimonials';
 import PromptEngineerSection from '../components/PromptEngineerSection';
+import RocketEngineerSection from '../components/RocketEngineerSection';
 import ParticleBackground from '../components/particles/ParticleBackground';
 import { motion } from 'framer-motion';
 
@@ -90,6 +91,21 @@ const Index: React.FC = () => {
       color: "text-cyber-yellow",
       url: "https://chatgpt.com/g/g-67cba72430b08191a43779ca0cca0e84-ai-software-engineer-gpt",
       delay: 0.3
+    },
+    {
+      title: "Rocket Engineering GPT",
+      description: "Specialized aerospace engineering assistance for rocket propulsion, mission planning, structural design, and trajectory calculations.",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+          <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+          <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+          <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+        </svg>
+      ),
+      color: "text-[#ff6b6b]",
+      url: "https://chatgpt.com/g/g-67cdf8a38eb4819191ef22099e43f53a-rocket-engineering-gpt",
+      delay: 0.4
     }
   ];
 
@@ -123,7 +139,7 @@ const Index: React.FC = () => {
               </p>
             </motion.div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
               {tools.map((tool, index) => (
                 <ToolCard 
                   key={index}
@@ -140,6 +156,7 @@ const Index: React.FC = () => {
         </section>
         
         <HowItWorks />
+        <RocketEngineerSection />
         <VideoSection />
         <PromptEngineerSection />
         <Testimonials />
