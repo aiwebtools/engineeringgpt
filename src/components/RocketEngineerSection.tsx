@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Rocket } from 'lucide-react';
+import RocketScene from './3D/RocketScene';
+
 const RocketEngineerSection: React.FC = () => {
   return <section className="py-20 relative overflow-hidden" id="rocket-engineering">
       <div className="absolute inset-0 bg-gradient-to-b from-[#050505] to-cyber-black z-0"></div>
@@ -69,16 +71,7 @@ const RocketEngineerSection: React.FC = () => {
               
               <div className="relative bg-[#0a0a0a] border border-gray-800 rounded-xl p-4 backdrop-blur-sm">
                 <div className="aspect-square w-full h-auto bg-gradient-to-br from-cyber-black to-[#0a0a0a] rounded-lg overflow-hidden relative">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-2/5 h-2/5 relative">
-                      <div className="absolute inset-0 bg-gradient-to-br from-cyber-purple/20 to-cyber-blue/20 rounded-full blur-2xl"></div>
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <Rocket className="w-16 h-16 text-white" />
-                      </div>
-                    </div>
-                  </div>
-                  
-                  
+                  <RocketScene />
                 </div>
                 
                 <div className="mt-4 space-y-2">
@@ -93,4 +86,5 @@ const RocketEngineerSection: React.FC = () => {
       </div>
     </section>;
 };
+
 export default RocketEngineerSection;
