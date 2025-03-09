@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Rocket } from 'lucide-react';
+
 const RocketEngineerSection: React.FC = () => {
   return <section className="py-20 relative overflow-hidden" id="rocket-engineering">
       <div className="absolute inset-0 bg-gradient-to-b from-[#050505] to-cyber-black z-0"></div>
@@ -21,13 +23,14 @@ const RocketEngineerSection: React.FC = () => {
               <div className="absolute top-0 right-0 w-64 h-64 bg-cyber-purple/10 blur-3xl rounded-full -mr-20 -mt-20"></div>
               
               <div className="relative">
-                <div className="w-16 h-16 bg-cyber-purple/10 rounded-xl flex items-center justify-center mb-6">
-                  <Rocket className="text-cyber-purple h-8 w-8" />
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-cyber-purple/10 rounded-xl flex items-center justify-center mr-4">
+                    <Rocket className="text-cyber-purple h-6 w-6" />
+                  </div>
+                  <h3 className="text-2xl md:text-3xl font-display font-bold text-white">
+                    Rocket Engineering GPT
+                  </h3>
                 </div>
-                
-                <h3 className="text-2xl md:text-3xl font-display font-bold mb-4 text-white">
-                  Rocket Engineering GPT
-                </h3>
                 
                 <p className="text-gray-300 mb-6">
                   Access cutting-edge rocket engineering expertise with our specialized AI tool. From propulsion systems and aerodynamics to mission planning and spacecraft design, get comprehensive assistance for all aerospace engineering challenges.
@@ -68,17 +71,16 @@ const RocketEngineerSection: React.FC = () => {
               <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-cyber-blue/20 rounded-full filter blur-3xl"></div>
               
               <div className="relative bg-[#0a0a0a] border border-gray-800 rounded-xl p-4 backdrop-blur-sm">
-                <div className="aspect-square w-full h-auto bg-gradient-to-br from-cyber-black to-[#0a0a0a] rounded-lg overflow-hidden relative">
+                <div className="aspect-square w-full h-auto bg-gradient-to-br from-[#0a0a0a] to-[#131313] rounded-lg overflow-hidden relative">
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-2/5 h-2/5 relative">
-                      <div className="absolute inset-0 bg-gradient-to-br from-cyber-purple/20 to-cyber-blue/20 rounded-full blur-2xl"></div>
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <Rocket className="w-16 h-16 text-white" />
-                      </div>
+                    <div className="relative p-6 flex items-center justify-center">
+                      <div className="absolute inset-0 bg-gradient-to-br from-cyber-purple/20 to-cyber-blue/20 rounded-full blur-xl"></div>
+                      <Rocket className="w-28 h-28 text-white" />
                     </div>
                   </div>
                   
-                  
+                  <div className="absolute top-0 left-0 right-0 h-1/3 bg-gradient-to-b from-cyber-purple/5 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-cyber-blue/5 to-transparent"></div>
                 </div>
                 
                 <div className="mt-4 space-y-2">
@@ -93,4 +95,5 @@ const RocketEngineerSection: React.FC = () => {
       </div>
     </section>;
 };
+
 export default RocketEngineerSection;
