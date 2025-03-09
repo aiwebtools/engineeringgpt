@@ -79,10 +79,10 @@ const RocketEngineerSection: React.FC = () => {
               <div className="relative bg-[#0a0a0a] border border-gray-800 rounded-xl p-4 backdrop-blur-sm">
                 <div className="aspect-square w-full h-auto bg-gradient-to-br from-cyber-black to-[#0a0a0a] rounded-lg overflow-hidden relative">
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-3/5 h-3/5 relative">
+                    <div className="w-2/5 h-2/5 relative">
                       <div className="absolute inset-0 bg-gradient-to-br from-cyber-purple/20 to-cyber-blue/20 rounded-full blur-2xl"></div>
                       <div className="absolute inset-0 flex items-center justify-center">
-                        <Rocket className="w-24 h-24 text-white" />
+                        <Rocket className="w-16 h-16 text-white" />
                       </div>
                     </div>
                   </div>
