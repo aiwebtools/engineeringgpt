@@ -12,6 +12,7 @@ import Testimonials from '../components/Testimonials';
 import PromptEngineerSection from '../components/PromptEngineerSection';
 import RocketEngineerSection from '../components/RocketEngineerSection';
 import ParticleBackground from '../components/particles/ParticleBackground';
+import DisclaimerPopup from '../components/DisclaimerPopup';
 import { motion } from 'framer-motion';
 
 const Index: React.FC = () => {
@@ -113,6 +114,7 @@ const Index: React.FC = () => {
     <div className="relative min-h-screen bg-cyber-black text-white overflow-hidden">
       <ParticleBackground />
       <Header />
+      <DisclaimerPopup />
       
       <main>
         <Hero />
