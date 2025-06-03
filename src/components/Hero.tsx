@@ -103,13 +103,16 @@ const Hero: React.FC = () => {
           className="max-w-4xl mx-auto"
         >
           <div className="inline-block px-3 py-1 mb-6 text-xs font-medium text-cyber-blue bg-cyber-blue/10 rounded-full border border-cyber-blue/20">
-            Professional Engineering AI Tools
+            Free Professional AI Engineering Tools by AIWEBTOOLS.AI
           </div>
           <h1 className="text-4xl md:text-6xl font-display font-bold mb-6 glow-text">
-            ENGINEERING GPTs
+            Free AI Tools - ENGINEERING GPTs
           </h1>
-          <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-            Advanced AI tools for electrical, mechanical, civil, and software engineering problems. Get expert-level assistance in seconds.
+          <p className="text-lg md:text-xl text-gray-300 mb-6 max-w-2xl mx-auto">
+            Advanced free AI tools for electrical, mechanical, civil, software and rocket engineering problems. Get expert-level engineering assistance in seconds with AIWEBTOOLS.AI professional AI web tools.
+          </p>
+          <p className="text-md text-gray-400 mb-10 max-w-3xl mx-auto">
+            Trusted by engineers worldwide - AI WEB TOOLS LLC provides the best free AI tools for engineering professionals. Access our comprehensive suite of AI engineering assistants absolutely free.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a 
@@ -117,15 +120,22 @@ const Hero: React.FC = () => {
               target="_blank" 
               rel="noopener noreferrer"
               className="cyber-button"
+              title="Free Electrical Engineering AI Tool"
             >
-              <span>Try Electrical Engineering GPT</span>
+              <span>Try Free Electrical Engineering GPT</span>
             </a>
             <a 
               href="#tools" 
               className="px-6 py-3 rounded-lg border border-cyber-blue/50 text-white hover:bg-cyber-blue/10 transition-all"
+              title="Explore All Free AI Engineering Tools"
             >
-              Explore All Tools
+              Explore All Free AI Tools
             </a>
+          </div>
+          
+          {/* Additional SEO keywords integration */}
+          <div className="mt-12 text-xs text-gray-500 max-w-2xl mx-auto">
+            <p>Free AI tools | AI web tools | Engineering AI | AIWEBTOOLS.AI | Professional AI tools | Best free AI tools | AI tools free | Engineering assistance | AI WEB TOOLS LLC</p>
           </div>
         </motion.div>
       </div>

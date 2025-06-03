@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Logo from './Logo';
 
@@ -21,7 +20,7 @@ const Footer: React.FC = () => {
           <div className="space-y-4">
             <Logo className="mb-4" />
             <p className="text-gray-400 text-sm">
-              Advanced AI tools for electrical, mechanical, civil, and software engineering problems.
+              AIWEBTOOLS.AI - Advanced free AI tools for electrical, mechanical, civil, software and rocket engineering problems. Professional AI web tools by AI WEB TOOLS LLC.
             </p>
             <div className="pt-2">
               <a 
@@ -29,14 +28,15 @@ const Footer: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-4 py-2 rounded-full glass border border-cyber-blue/50 text-sm font-medium text-cyber-blue hover:bg-cyber-blue/10 transition-all"
+                title="More Free AI Tools by AIWEBTOOLS.AI"
               >
-                More AI Tools
+                More Free AI Tools
               </a>
             </div>
           </div>
           
           <div>
-            <h3 className="text-white font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-white font-semibold mb-4">Free AI Engineering Tools</h3>
             <ul className="space-y-2">
               {navLinks.map((link, index) => (
                 <li key={index}>
@@ -45,6 +45,7 @@ const Footer: React.FC = () => {
                     target={link.url.startsWith('http') ? '_blank' : undefined}
                     rel={link.url.startsWith('http') ? 'noopener noreferrer' : undefined}
                     className="text-gray-400 hover:text-cyber-blue text-sm transition-colors"
+                    title={`${link.name} - Free AI Tool by AIWEBTOOLS.AI`}
                   >
                     {link.name}
                   </a>
@@ -109,8 +110,9 @@ const Footer: React.FC = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-cyber-blue transition-colors"
+              title="AIWEBTOOLS.AI - Free AI Tools"
             >
-              © 2025 AI WEB TOOLS LLC All rights reserved.
+              © 2025 AI WEB TOOLS LLC - AIWEBTOOLS.AI - All rights reserved. Free AI Tools for Engineering Professionals.
             </a>
           </div>
           
@@ -127,6 +129,13 @@ const Footer: React.FC = () => {
               </svg>
             </a>
           </div>
+        </div>
+        
+        {/* SEO Footer Content */}
+        <div className="mt-6 text-center">
+          <p className="text-xs text-gray-600">
+            Leading provider of free AI tools for engineering professionals. AIWEBTOOLS.AI offers the best free AI web tools including Electrical Engineering GPT, Mechanical Engineering AI, Civil Engineering Tools, Software Engineering AI, and Rocket Engineering GPT. Professional AI tools by AI WEB TOOLS LLC - trusted by engineers worldwide for free AI engineering assistance.
+          </p>
         </div>
       </div>
     </footer>

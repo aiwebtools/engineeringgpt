@@ -16,9 +16,15 @@ import DisclaimerPopup from '../components/DisclaimerPopup';
 import { motion } from 'framer-motion';
 
 const Index: React.FC = () => {
-  // SEO title update
+  // SEO title update with more keywords
   useEffect(() => {
-    document.title = "ENGINEERING GPTs | Professional Engineering AI Tools";
+    document.title = "Free AI Tools | ENGINEERING GPTs - Professional AI Web Tools by AIWEBTOOLS.AI";
+    
+    // Add additional meta description for better SEO
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Free professional AI tools for engineering - Electrical, Mechanical, Civil, Software & Rocket Engineering GPTs. Advanced AI web tools by AIWEBTOOLS.AI for expert-level engineering assistance.');
+    }
   }, []);
 
   const tools = [
@@ -116,10 +122,17 @@ const Index: React.FC = () => {
       <Header />
       <DisclaimerPopup />
       
+      {/* SEO-optimized hidden content for search engines */}
+      <div className="sr-only">
+        <h1>Free AI Tools for Engineering - AIWEBTOOLS.AI</h1>
+        <p>Professional AI web tools including Electrical Engineering GPT, Mechanical Engineering AI, Civil Engineering Tools, Software Engineering AI, and Rocket Engineering GPT. Free AI tools by AI WEB TOOLS LLC.</p>
+        <p>Keywords: free ai tools, ai web tools, engineering ai tools, aiwebtools.ai, professional ai tools, best ai tools, ai tools free, engineering assistance, electrical engineering gpt, mechanical engineering ai</p>
+      </div>
+      
       <main>
         <Hero />
         
-        {/* Tools Section */}
+        {/* Tools Section - Enhanced for SEO */}
         <section id="tools" className="py-20 relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-cyber-black to-[#080808] z-0"></div>
           <div className="container mx-auto px-4 relative z-10">
@@ -131,14 +144,19 @@ const Index: React.FC = () => {
               className="max-w-4xl mx-auto text-center mb-16"
             >
               <div className="inline-block px-3 py-1 mb-6 text-xs font-medium text-cyber-blue bg-cyber-blue/10 rounded-full border border-cyber-blue/20">
-                Professional Suite
+                Free Professional AI Tools Suite by AIWEBTOOLS.AI
               </div>
               <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 glow-text">
-                Engineering Tools
+                Free AI Engineering Tools
               </h2>
               <p className="text-gray-300 max-w-2xl mx-auto">
-                Access specialized AI tools designed for different engineering disciplines.
+                Access specialized free AI tools designed for different engineering disciplines. Professional AI web tools by AI WEB TOOLS LLC - your trusted source for engineering AI assistance.
               </p>
+              
+              {/* Additional SEO content */}
+              <div className="mt-8 text-sm text-gray-400 max-w-3xl mx-auto">
+                <p>AIWEBTOOLS.AI provides the best free AI tools for engineers, including advanced GPT models for electrical, mechanical, civil, software, and rocket engineering. Our AI web tools are designed by professionals for professionals.</p>
+              </div>
             </motion.div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
@@ -153,6 +171,21 @@ const Index: React.FC = () => {
                   delay={tool.delay}
                 />
               ))}
+            </div>
+            
+            {/* SEO-optimized content block */}
+            <div className="mt-16 max-w-4xl mx-auto text-center">
+              <h3 className="text-2xl font-bold mb-4 text-cyber-blue">Why Choose AIWEBTOOLS.AI for Free AI Tools?</h3>
+              <div className="grid md:grid-cols-2 gap-8 text-left">
+                <div>
+                  <h4 className="font-semibold mb-2 text-cyber-green">Professional AI Web Tools</h4>
+                  <p className="text-gray-300 text-sm">Our free AI tools are developed by AI WEB TOOLS LLC with 30+ years of engineering experience, ensuring professional-grade assistance for all your engineering needs.</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-2 text-cyber-purple">Best Free AI Tools Available</h4>
+                  <p className="text-gray-300 text-sm">AIWEBTOOLS.AI offers the most comprehensive suite of free AI engineering tools, from electrical and mechanical to software and rocket engineering GPTs.</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
