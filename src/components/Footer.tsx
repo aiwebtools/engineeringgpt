@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
             </p>
             <div className="pt-2">
               <a 
-                href="https://www.aiwebtools.ai"
+                href="https://aiwebtools.lovable.app/?via=aiwebtools"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-4 py-2 rounded-full glass border border-cyber-blue/50 text-sm font-medium text-cyber-blue hover:bg-cyber-blue/10 transition-all"
