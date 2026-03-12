@@ -25,7 +25,7 @@ const Header: React.FC = () => {
     { name: 'PROMPT ENGINEER GPT', url: 'https://perfectpromptengine.lovable.app/' },
     { name: 'FAQ', url: '#faq' },
     { name: 'Disclaimer', url: '#disclaimer' },
-    { name: 'More AI Tools', url: 'https://www.aiwebtools.ai' },
+    { name: 'More AI Tools', url: 'https://aiwebtools.lovable.app/?via=aiwebtools' },
   ];
 
   return (
