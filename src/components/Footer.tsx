@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
             </p>
             <div className="pt-2">
               <a 
-                href="https://www.aiwebtools.ai"
+                href="https://aiwebtools.lovable.app/?via=aiwebtools"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-4 py-2 rounded-full glass border border-cyber-blue/50 text-sm font-medium text-cyber-blue hover:bg-cyber-blue/10 transition-all"
@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <a 
-                  href="https://aiwebtools.ai/terms-of-services"
+                  href="https://aiwebtools.lovable.app/?via=aiwebtools"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-cyber-blue text-sm transition-colors"
@@ -106,7 +106,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-500 text-sm mb-4 md:mb-0">
             <a 
-              href="https://www.aiwebtools.ai"
+              href="https://aiwebtools.lovable.app/?via=aiwebtools"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-cyber-blue transition-colors"
@@ -118,7 +118,7 @@ const Footer: React.FC = () => {
           
           <div className="flex space-x-4">
             <a 
-              href="https://www.aiwebtools.ai"
+              href="https://aiwebtools.lovable.app/?via=aiwebtools"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-cyber-blue transition-colors"
